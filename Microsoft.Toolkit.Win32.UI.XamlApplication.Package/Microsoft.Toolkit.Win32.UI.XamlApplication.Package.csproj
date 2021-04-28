@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.0</TargetFramework>
+		<RootNamespace>Microsoft.Toolkit.UI.XamlHost</RootNamespace>
+		<AssemblyName>Microsoft.Toolkit.UI.XamlApplication.Package</AssemblyName>
+		<Title>Windows Community Toolkit XamlApplication</Title>
+		<Description>This library provides XAML islands common helpers for native applications. It is part of the Windows Community Toolkit.</Description>
+		<PackageTags>XAML Islands XAMLHost</PackageTags>
+		<PackageId>Microsoft.Toolkit.Win32.UI.XamlApplication</PackageId>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<IsNativeProject>true</IsNativeProject>
+		<SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<IsTool>true</IsTool>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="..\x64\$(Configuration)\Microsoft.Toolkit.Win32.UI.XamlHost\Microsoft.Toolkit.Win32.UI.XamlHost.winmd">
+			<Pack>true</Pack>
+			<PackagePath>lib\uap10.0</PackagePath>
+		</Content>
+
+		<Content Include="..\x64\$(Configuration)\Microsoft.Toolkit.Win32.UI.XamlHost\Microsoft.Toolkit.Win32.UI.XamlHost.dll">
+			<Pack>true</Pack>
+			<PackagePath>runtimes\win10-x64\native</PackagePath>
+		</Content>
+
+		<Content Include="..\x64\$(Configuration)\Microsoft.Toolkit.Win32.UI.XamlHost\Microsoft.Toolkit.Win32.UI.XamlHost.pdb">
+			<Pack>true</Pack>
+			<PackagePath>runtimes\win10-x64\native</PackagePath>
+		</Content>
+
+		<Content Include="..\x64\$(Configuration)\Microsoft.Toolkit.Win32.UI.XamlHost\Microsoft.Toolkit.Win32.UI.XamlHost.pri">
+			<Pack>true</Pack>
+			<PackagePath>runtimes\win10-x64\native</PackagePath>
+		</Content>
+
+	</ItemGroup>
+</Project>
