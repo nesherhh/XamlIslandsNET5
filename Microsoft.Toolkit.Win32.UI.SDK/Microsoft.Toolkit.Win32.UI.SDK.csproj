@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<Title>Windows Community Toolkit Tools for XAML Islands</Title>
+		<Description>This library provides XAML islands common helpers applications. It is part of the Windows Community Toolkit.</Description>
+		<PackageTags>XAML Islands Tools</PackageTags>
+		<PackageId>Microsoft.Toolkit.Win32.UI.SDK</PackageId>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<IsNativeProject>true</IsNativeProject>
+		<SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<IsTool>true</IsTool>
+		<Platforms>x64</Platforms>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="$(MSBuildProgramFiles32)\Windows Kits\10\bin\10.0.$(DefaultTargetPlatformVersion).0\x86\mt.exe">
+			<Pack>true</Pack>
+			<PackagePath>tools</PackagePath>
+		</Content>
+		<Content Include="$(MSBuildProgramFiles32)\Windows Kits\10\bin\10.0.$(DefaultTargetPlatformVersion).0\x86\mt.exe.config">
+			<Pack>true</Pack>
+			<PackagePath>tools</PackagePath>
+		</Content>
+		<Content Include="$(MSBuildProgramFiles32)\Windows Kits\10\bin\10.0.$(DefaultTargetPlatformVersion).0\x86\midlrtmd.dll">
+			<Pack>true</Pack>
+			<PackagePath>tools</PackagePath>
+		</Content>
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.VCRTForwarders.140" Version="1.0.6">
+			<PrivateAssets>analyzers</PrivateAssets>
+		</PackageReference>
+		<ProjectReference Include="..\Microsoft.Toolkit.Win32.UI.XamlApplication.Package\Microsoft.Toolkit.Win32.UI.XamlApplication.Package.csproj" />
+	</ItemGroup>
+</Project>

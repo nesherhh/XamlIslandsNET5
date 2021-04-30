@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0-windows10.0.18362.0</TargetFramework>
+		<CsWinRTWindowsMetadata>10.0.18362.0+</CsWinRTWindowsMetadata>
+		<CsWinRTFilters>
+-exclude Windows
+# Exclude Windows.UI, Windows.UI.Text, Windows.UI.Xaml per Microsoft.Windows.SDK.WinUI.Contracts NuGet
+-exclude Windows.UI.Popups
+-exclude Windows.UI.Colors
+-exclude Windows.UI.IColors
+-exclude Windows.UI.ColorHelper
+-exclude Windows.UI.IColorHelper
+#-exclude Windows.UI.Text (must include Windows.UI.Text to work around WinUI nuget issues)
+-include Windows.UI.Xaml
+-exclude Windows.ApplicationModel.Store.Preview
+# Allow Windows.UI.Text, Windows.UI.Xaml types used in other namespaces
+-include Windows.UI.Text
+-exclude Windows.UI.Text.Core
+-exclude Windows.UI.Text.FontStretch
+-exclude Windows.UI.Text.FontStyle
+-exclude Windows.UI.Text.FontWeight
+-exclude Windows.UI.Text.UnderlineType
+-include Windows.UI.Xaml.Media.Animation.ConditionallyIndependentlyAnimatableAttribute
+		</CsWinRTFilters>
+		<Platforms>x64</Platforms>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.2.5" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0-windows10.0.18362.0</TargetFramework>
+		<CsWinRTFilters>
+-include Microsoft.Toolkit.Win32.UI.XamlHost
+		</CsWinRTFilters>
+		<Platforms>x64</Platforms>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.2.5" />
+		<ProjectReference Include="..\Microsoft.Toolkit.Win32.UI.XamlHost\Microsoft.Toolkit.Win32.UI.XamlHost.vcxproj">
+			<PrivateAssets>all</PrivateAssets>
+		</ProjectReference>
+		<ProjectReference Include="..\WindowsSDKContracts\WindowsSDKContracts.csproj" />
+	</ItemGroup>
+
+</Project>

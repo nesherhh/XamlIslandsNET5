@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net5.0-windows10.0.18362.0</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<AssemblyTitle>Windows Community Toolkit Controls (Sample Xaml Island Wrapper Controls for .NET WPF)</AssemblyTitle>
+		<Description>Sample Code for Windows Community Toolkit Controls</Description>
+		<StartupObject>Microsoft.Toolkit.Sample.Wpf.App.Program</StartupObject>
+		<Platforms>x64</Platforms>
+		<AssetTargetFallback>$(AssetTargetFallback);native;uap10.0.18362</AssetTargetFallback>
+		
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Microsoft.Toolkit.Sample.UWP.App\Microsoft.Toolkit.Sample.UWP.App.csproj" />
+	  <ProjectReference Include="..\Microsoft.Toolkit.Wpf.UI.Controls\Microsoft.Toolkit.Wpf.UI.Controls.csproj" />
+	  <ProjectReference Include="..\Microsoft.Toolkit.Wpf.UI.XamlHost\Microsoft.Toolkit.Wpf.UI.XamlHost.csproj" />
+	</ItemGroup>
+
+</Project>
