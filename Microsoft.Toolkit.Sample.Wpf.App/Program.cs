@@ -86,9 +86,8 @@ namespace Microsoft.Toolkit.Sample.Wpf.App
 #if !NET462
             else if (startupKind == StartupKind.Explict)
             {
-                using (var xamlApp = new Microsoft.Toolkit.Sample.UWP.App.App())
+                using (var xamlApp = new Microsoft.Toolkit.Sample.UWP.App.AppWrapper())
                 {
-                    var appOwnedWindowsXamlManager = xamlApp.WindowsXamlManager;
                     var app = new Microsoft.Toolkit.Sample.Wpf.App.App();
                     app.InitializeComponent();
                     app.Run();

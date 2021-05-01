@@ -16,6 +16,21 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Content Include="..\Microsoft.WinRT.Win32.targets">
+			<Pack>true</Pack>
+			<PackagePath>build</PackagePath>
+		</Content>
+
+		<Content Include="Microsoft.Toolkit.Win32.UI.SDK.props">
+			<Pack>true</Pack>
+			<PackagePath>build</PackagePath>
+		</Content>
+
+		<Content Include="Microsoft.Toolkit.Win32.UI.SDK.targets">
+			<Pack>true</Pack>
+			<PackagePath>build</PackagePath>
+		</Content>
+
 		<Content Include="$(MSBuildProgramFiles32)\Windows Kits\10\bin\10.0.$(DefaultTargetPlatformVersion).0\x86\mt.exe">
 			<Pack>true</Pack>
 			<PackagePath>tools</PackagePath>
