@@ -10,6 +10,7 @@
     <RootNamespace>Microsoft.Toolkit.Sample.UWP.App</RootNamespace>
     <AssemblyName>Microsoft.Toolkit.Sample.UWP.App</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
+	<EnableTypeInfoReflection>false</EnableTypeInfoReflection>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.18362.0</TargetPlatformMinVersion>
@@ -49,11 +50,11 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AppWrapper.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AppWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -82,8 +83,11 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.2.11</Version>
+      <Version>6.2.9</Version>
     </PackageReference>
+	<PackageReference Include="Microsoft.Windows.SDK.Contracts">
+	  <Version>10.0.18362.2005</Version>
+	</PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Microsoft.Toolkit.Win32.UI.XamlHost\Microsoft.Toolkit.Win32.UI.XamlHost.vcxproj">

@@ -1,0 +1,8 @@
+namespace CppUwpApp
+{
+    [default_interface]
+    runtimeclass Wrapper : Windows.Foundation.IClosable
+    {
+        Wrapper();
+    }
+}

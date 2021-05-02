@@ -2,7 +2,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <PropertyGroup>
-    <DefaultTargetPlatformVersion Condition="'$(DefaultTargetPlatformVersion)'==''">19041</DefaultTargetPlatformVersion>
+    <DefaultTargetPlatformVersion Condition="'$(DefaultTargetPlatformVersion)'==''">18362</DefaultTargetPlatformVersion>
     <AssetTargetFallback Condition="'$(AssetTargetFallback)'==''">uap10.0.$(DefaultTargetPlatformVersion)</AssetTargetFallback>
 
     <!-- Up-to-date check fails for Xaml Islands projects: -->
@@ -20,7 +20,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <_TargetPlatformVersion Condition="$(_TargetPlatformVersion)==''">10.0.19041.0</_TargetPlatformVersion>
+    <_TargetPlatformVersion Condition="$(_TargetPlatformVersion)==''">10.0.18362.0</_TargetPlatformVersion>
     <ManifestTool Condition="Exists('$(MSBuildThisFileDirectory)\..\tools\mt.exe')">$(MSBuildThisFileDirectory)\..\tools\mt.exe</ManifestTool>
     <ManifestTool Condition="'$(ManifestTool)'==''">$(MSBuildProgramFiles32)\Windows Kits\10\bin\$(_TargetPlatformVersion)\x86\mt.exe</ManifestTool>
   </PropertyGroup>
@@ -29,7 +29,7 @@
     <IntDir>$(BaseIntermediateOutputPath)\$(Platform)\$(Configuration)\$(TargetFramework)\</IntDir>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.VCRTForwarders.140" Version="1.0.7" />
+    <PackageReference Include="Microsoft.VCRTForwarders.140" Version="1.0.6" />
   </ItemGroup>
 
   <Target Name="_GetUWPAppPayload">
@@ -122,7 +122,7 @@
   </trustInfo>
   <compatibility xmlns='urn:schemas-microsoft-com:compatibility.v1'>
     <application>
-      <maxversiontested Id='10.0.19041.0'/>
+      <maxversiontested Id='10.0.18362.0'/>
       <supportedOS Id='{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}' />
     </application>
   </compatibility>

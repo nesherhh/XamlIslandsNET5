@@ -8,14 +8,40 @@
 		<Description>Sample Code for Windows Community Toolkit Controls</Description>
 		<StartupObject>Microsoft.Toolkit.Sample.Wpf.App.Program</StartupObject>
 		<Platforms>x64</Platforms>
-		<AssetTargetFallback>$(AssetTargetFallback);native;uap10.0.18362</AssetTargetFallback>
-		
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		<AssetTargetFallback>uap10.0.18362</AssetTargetFallback>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<DebugType>full</DebugType>
+		<CsWinRTFilters>
+			-include CppUwpApp
+		</CsWinRTFilters>
+
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Microsoft.Toolkit.Sample.UWP.App\Microsoft.Toolkit.Sample.UWP.App.csproj" />
-	  <ProjectReference Include="..\Microsoft.Toolkit.Wpf.UI.Controls\Microsoft.Toolkit.Wpf.UI.Controls.csproj" />
-	  <ProjectReference Include="..\Microsoft.Toolkit.Wpf.UI.XamlHost\Microsoft.Toolkit.Wpf.UI.XamlHost.csproj" />
+	  <PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.2.5" />
 	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\CppUwpApp\CppUwpApp.vcxproj" />
+		<ProjectReference Include="..\Microsoft.Toolkit.Wpf.UI.Controls\Microsoft.Toolkit.Wpf.UI.Controls.csproj">
+			<Private>true</Private>
+		</ProjectReference>
+		<ProjectReference Include="..\Microsoft.Toolkit.Wpf.UI.XamlHost\Microsoft.Toolkit.Wpf.UI.XamlHost.csproj">
+			<Private>true</Private>
+		</ProjectReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Microsoft.Toolkit.Win32.UI.XamlApplication.Package\Microsoft.Toolkit.Win32.UI.XamlApplication.Package.csproj">
+			<PrivateAssets>analyzers</PrivateAssets>
+		</ProjectReference>
+
+		<ProjectReference Include="..\Microsoft.Toolkit.Win32.UI.XamlHost.Managed\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.csproj">
+			<PrivateAssets>analyzers</PrivateAssets>
+		</ProjectReference>
+	</ItemGroup>
+
+	<Import Project="..\Microsoft.WinRT.Win32.targets" />
 
 </Project>

@@ -63,7 +63,7 @@ namespace Microsoft.Toolkit.Sample.Wpf.App
         [STAThread]
         public static void Main()
         {
-            var startupKind = StartupKind.Normal;
+            var startupKind = StartupKind.Explict;
 
             if (startupKind == StartupKind.CustomAppSettings)
             {
@@ -86,8 +86,9 @@ namespace Microsoft.Toolkit.Sample.Wpf.App
 #if !NET462
             else if (startupKind == StartupKind.Explict)
             {
-                using (var xamlApp = new Microsoft.Toolkit.Sample.UWP.App.AppWrapper())
-                {
+				//using (var xamlApp = new Microsoft.Toolkit.Sample.UWP.App.AppWrapper())
+                using (var xamlApp = new CppUwpApp.Wrapper())
+				{
                     var app = new Microsoft.Toolkit.Sample.Wpf.App.App();
                     app.InitializeComponent();
                     app.Run();
