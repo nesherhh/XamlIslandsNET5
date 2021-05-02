@@ -1,10 +1,20 @@
 ﻿#pragma once
-#include "App.xaml.g.h"
+#include "App.g.h"
+#include "App.base.h"
 
 namespace winrt::CppUwpApp::implementation
 {
-    struct App : AppT<App>
+    class App : public AppT2<App>
     {
+    public:
         App();
+        ~App();
+    };
+}
+
+namespace winrt::CppUwpApp::factory_implementation
+{
+    class App : public AppT<App, implementation::App>
+    {
     };
 }

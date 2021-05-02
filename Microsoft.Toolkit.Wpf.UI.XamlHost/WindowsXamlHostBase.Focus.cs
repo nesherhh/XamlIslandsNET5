@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows;
 using Microsoft.Toolkit.Win32.UI.XamlHost;
+using WinRT;
 using WF = Windows.Foundation;
 using WUX = Windows.UI.Xaml;
 
@@ -181,7 +182,7 @@ namespace Microsoft.Toolkit.Wpf.UI.XamlHost
                 return;
             }
 
-            var desktopWindowXamlSourceNative = _xamlSource.GetInterop<IDesktopWindowXamlSourceNative2>();
+            var desktopWindowXamlSourceNative = _xamlSource.As<IDesktopWindowXamlSourceNative2>();
             if (desktopWindowXamlSourceNative != null)
             {
                 handled = desktopWindowXamlSourceNative.PreTranslateMessage(msg);

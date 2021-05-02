@@ -6,6 +6,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Windows.Interop;
 using Microsoft.Toolkit.Win32.UI.XamlHost;
+using WinRT;
 using WUX = Windows.UI.Xaml;
 
 namespace Microsoft.Toolkit.Wpf.UI.XamlHost
@@ -219,7 +220,7 @@ namespace Microsoft.Toolkit.Wpf.UI.XamlHost
             // to call it directly here.
 
             // Create DesktopWindowXamlSource instance
-            var desktopWindowXamlSourceNative = _xamlSource.GetInterop<IDesktopWindowXamlSourceNative>();
+            var desktopWindowXamlSourceNative = _xamlSource.As<IDesktopWindowXamlSourceNative>();
 
             // Associate the window where UWP XAML will display content
             desktopWindowXamlSourceNative.AttachToWindow(hwndParent.Handle);

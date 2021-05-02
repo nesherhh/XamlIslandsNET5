@@ -65,14 +65,14 @@ namespace Microsoft.Toolkit.Sample.Wpf.App
 			{
 				Width = 50,
 				Height = 75,
-				Fill = new windows.UI.Xaml.Media.SolidColorBrush(new Color {B = 255}),
+				Fill = new windows.UI.Xaml.Media.SolidColorBrush(new Color {B = 255, A = 255}),
 			});
 
 			stackPanel.Children.Add(new windows.UI.Xaml.Shapes.Rectangle()
 			{
 				Width = 200,
 				Height = 30,
-				Fill = new windows.UI.Xaml.Media.SolidColorBrush(new Color {R = 255}),
+				Fill = new windows.UI.Xaml.Media.SolidColorBrush(new Color {R = 255, A = 255 }),
 			});
 
 			var button = new windows.UI.Xaml.Controls.Button()
@@ -89,7 +89,7 @@ namespace Microsoft.Toolkit.Sample.Wpf.App
 			{
 				Width = 25,
 				Height = 100,
-				Fill = new windows.UI.Xaml.Media.SolidColorBrush(new Color {G = 255}),
+				Fill = new windows.UI.Xaml.Media.SolidColorBrush(new Color {G = 255, A = 255 }),
 			});
 
 			windows.UI.Xaml.Controls.Flyout flyout = new windows.UI.Xaml.Controls.Flyout();
