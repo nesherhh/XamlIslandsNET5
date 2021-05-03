@@ -47,7 +47,7 @@ namespace Microsoft.Toolkit.Wpf.UI.Controls
         {
             // Bind dependency properties across controls
             // properties of FrameworkElement
-            Bind(nameof(Style), StyleProperty, windows.UI.Xaml.Controls.Maps.MapControl.StyleProperty);
+            //Bind(nameof(Style), StyleProperty, windows.UI.Xaml.Controls.Maps.MapControl.StyleProperty);
             Bind(nameof(MaxHeight), MaxHeightProperty, windows.UI.Xaml.Controls.Maps.MapControl.MaxHeightProperty);
             Bind(nameof(FlowDirection), FlowDirectionProperty, windows.UI.Xaml.Controls.Maps.MapControl.FlowDirectionProperty);
             Bind(nameof(Margin), MarginProperty, windows.UI.Xaml.Controls.Maps.MapControl.MarginProperty);
