@@ -1,22 +1,29 @@
 ﻿<Window x:Class="WpfAppWithoutUwp.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:xamlHost="clr-namespace:Microsoft.Toolkit.Wpf.UI.XamlHost;assembly=Microsoft.Toolkit.Wpf.UI.XamlHost"
-        xmlns:local="clr-namespace:WpfAppWithoutUwp"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:xamlHost="clr-namespace:Microsoft.Toolkit.Wpf.UI.XamlHost;assembly=Microsoft.Toolkit.Wpf.UI.XamlHost"
+		xmlns:local="clr-namespace:WpfAppWithoutUwp"
+		xmlns:controls="clr-namespace:Microsoft.Toolkit.Wpf.UI.Controls;assembly=Microsoft.Toolkit.Wpf.UI.Controls"
+		mc:Ignorable="d"
+		Title="MainWindow"
+		Height="450"
+		Width="800">
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition />
 			<RowDefinition />
 		</Grid.RowDefinitions>
 		<xamlHost:WindowsXamlHost Grid.Row="0"
-		                          InitialTypeName="Windows.UI.Xaml.Controls.Button"
-		                          ChildChanged="WindowsXamlHostBase_OnChildChanged" />
-		<xamlHost:WindowsXamlHost Grid.Row="1"
+								  InitialTypeName="Windows.UI.Xaml.Controls.Button"
+								  ChildChanged="WindowsXamlHostBase_OnChildChanged" />
+		<!--<xamlHost:WindowsXamlHost Grid.Row="1"
 		                          InitialTypeName="UwpControlsNet5.Controls.HudControl"
-		                          ChildChanged="WindowsXamlHostBase_OnChildChanged" />
+		                          ChildChanged="WindowsXamlHostBase_OnChildChanged" />-->
+		<controls:MapControl Grid.Row="1"
+							 x:Name="myMap"
+							 Loaded="myMap_Loaded" />
+
 	</Grid>
 </Window>
