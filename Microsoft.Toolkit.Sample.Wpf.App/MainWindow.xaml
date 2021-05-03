@@ -15,14 +15,14 @@
                 <TabItem.Header>Samples</TabItem.Header>
                 <xamlhost:WindowsXamlHost x:Name="windowsXamlHost" Loaded="WindowsXamlHost_Loaded" />
             </TabItem>
-            <!--<TabItem>
+            <TabItem>
                 <TabItem.Header>MapControl</TabItem.Header>
                 <controls:MapControl x:Name="myMap" Loaded="myMap_Loaded"/>
-            </TabItem>-->
-            <TabItem>
-                <TabItem.Header>CustomControl</TabItem.Header>
-                <xamlhost:WindowsXamlHost x:Name="myControl" InitialTypeName="Microsoft.Toolkit.Sample.UWP.App.MyUserControl"/>
             </TabItem>
+            <!--<TabItem>
+                <TabItem.Header>CustomControl</TabItem.Header>
+				<xamlhost:WindowsXamlHost x:Name="myControl" InitialTypeName="UwpControlsNet5.Controls.HudControl"/>
+            </TabItem>-->
         </TabControl>
     </Grid>
 </Window>

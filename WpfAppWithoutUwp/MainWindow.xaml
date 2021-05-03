@@ -7,7 +7,16 @@
         xmlns:local="clr-namespace:WpfAppWithoutUwp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <xamlHost:WindowsXamlHost InitialTypeName="Windows.UI.Xaml.Controls.Button"/>
-    </Grid>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition />
+			<RowDefinition />
+		</Grid.RowDefinitions>
+		<xamlHost:WindowsXamlHost Grid.Row="0"
+		                          InitialTypeName="Windows.UI.Xaml.Controls.Button"
+		                          ChildChanged="WindowsXamlHostBase_OnChildChanged" />
+		<xamlHost:WindowsXamlHost Grid.Row="1"
+		                          InitialTypeName="UwpControlsNet5.Controls.HudControl"
+		                          ChildChanged="WindowsXamlHostBase_OnChildChanged" />
+	</Grid>
 </Window>
