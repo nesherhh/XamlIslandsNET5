@@ -10,7 +10,7 @@ namespace winrt::CppUwpApp::implementation
 		Wrapper();
 		void Close();
 	private:
-		std::shared_ptr<App> m_app_ = nullptr;
+		App_base<App, Windows::UI::Xaml::Markup::IXamlMetadataProvider>::class_type m_app_ = nullptr;
 	};
 }
 

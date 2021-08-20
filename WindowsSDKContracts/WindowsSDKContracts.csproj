@@ -1,8 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net5.0-windows10.0.18362.0</TargetFramework>
-		<CsWinRTWindowsMetadata>10.0.18362.0+</CsWinRTWindowsMetadata>
+		<TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
+		<CsWinRTWindowsMetadata>10.0.19041.0+</CsWinRTWindowsMetadata>
+		<AssetTargetFallback>uap10.0.19041</AssetTargetFallback>
 		<CsWinRTFilters>
 -exclude Windows
 # Exclude Windows.UI, Windows.UI.Text, Windows.UI.Xaml per Microsoft.Windows.SDK.WinUI.Contracts NuGet

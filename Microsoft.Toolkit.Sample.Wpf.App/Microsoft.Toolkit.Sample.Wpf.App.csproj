@@ -2,14 +2,14 @@
 
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
-		<TargetFramework>net5.0-windows10.0.18362.0</TargetFramework>
+		<TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
 		<UseWPF>true</UseWPF>
 		<AssemblyTitle>Windows Community Toolkit Controls (Sample Xaml Island Wrapper Controls for .NET WPF)</AssemblyTitle>
 		<Description>Sample Code for Windows Community Toolkit Controls</Description>
 		<StartupObject>Microsoft.Toolkit.Sample.Wpf.App.Program</StartupObject>
 		<Platforms>x64</Platforms>
 		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-		<AssetTargetFallback>uap10.0.18362</AssetTargetFallback>
+		<AssetTargetFallback>uap10.0.19041</AssetTargetFallback>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
 		<DebugType>full</DebugType>
 		<CsWinRTFilters>

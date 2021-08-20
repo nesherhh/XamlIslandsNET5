@@ -8,7 +8,7 @@ namespace winrt::CppUwpApp::implementation
     {
     public:
         App();
-        ~App();
+        ~App() override;
     };
 }
 
