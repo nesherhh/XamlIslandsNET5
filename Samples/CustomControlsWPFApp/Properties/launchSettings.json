@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CustomControlsWPFApp": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

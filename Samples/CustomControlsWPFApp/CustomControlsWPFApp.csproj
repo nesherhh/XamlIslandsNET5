@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<Platforms>x64</Platforms>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		<StartupObject>CustomControlsWPFApp.Program</StartupObject>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Update="Microsoft.VCRTForwarders.140" Version="1.0.7" />
+		<PackageReference Include="WindowsSDKContracts" Version="6.1.2.12" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\CustomControlsWrapperContracts\CustomControlsWrapperContracts.csproj" />
+	  <ProjectReference Include="..\CustomControls\CustomControls.csproj" />
+	</ItemGroup>
+
+	<Import Project="..\..\Microsoft.WinRT.Win32.targets" />
+
+</Project>
