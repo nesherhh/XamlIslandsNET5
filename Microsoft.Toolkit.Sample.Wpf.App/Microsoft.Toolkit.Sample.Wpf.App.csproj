@@ -23,7 +23,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\CppUwpApp\CppUwpApp.vcxproj" />
 		<ProjectReference Include="..\Microsoft.Toolkit.Wpf.UI.Controls\Microsoft.Toolkit.Wpf.UI.Controls.csproj">
 			<Private>true</Private>
 		</ProjectReference>
