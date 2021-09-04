@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Windows;
 using Windows.UI.Xaml.Hosting;
-using RuntimeComponent1;
-using RuntimeComponent1.Controls;
 
 namespace WpfAppWithoutUwp
 {

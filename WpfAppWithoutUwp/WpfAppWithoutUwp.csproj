@@ -14,8 +14,6 @@
 		<PackageReference Include="Microsoft.VCRTForwarders.140" Version="1.0.7" />
 
 		<ProjectReference Include="..\Microsoft.Toolkit.Wpf.UI.XamlHost\Microsoft.Toolkit.Wpf.UI.XamlHost.csproj" />
-
-		<ProjectReference Include="..\RuntimeComponentContracts\RuntimeComponentContracts.csproj" />
 		<ProjectReference Include="..\WindowsSDKContracts\WindowsSDKContracts.csproj" />
 		<ProjectReference Include="..\XamlHostContracts\XamlHostContracts.csproj" />
 	</ItemGroup>
