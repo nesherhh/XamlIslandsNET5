@@ -14,6 +14,7 @@
 		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<IsTool>true</IsTool>
 		<Platforms>x64</Platforms>
+		<RepositoryUrl>https://github.com/nesherhh/XamlIslandsNET5</RepositoryUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -57,5 +58,12 @@
 			<PackagePath>build\native</PackagePath>
 		</Content>
 
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="DotNet.ReproducibleBuilds" Version="0.1.66">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
 	</ItemGroup>
 </Project>

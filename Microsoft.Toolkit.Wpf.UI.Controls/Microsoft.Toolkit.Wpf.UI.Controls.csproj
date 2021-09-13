@@ -18,11 +18,12 @@
 		<PackageTags>Win32 WPF UWP XAML</PackageTags>
 		<UseWPF>true</UseWPF>
 		<Platforms>x64</Platforms>
+		<RepositoryUrl>https://github.com/nesherhh/XamlIslandsNET5</RepositoryUrl>
 
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Microsoft.Toolkit.Wpf.UI.XamlHost\Microsoft.Toolkit.Wpf.UI.XamlHost.csproj" >
+		<ProjectReference Include="..\Microsoft.Toolkit.Wpf.UI.XamlHost\Microsoft.Toolkit.Wpf.UI.XamlHost.csproj">
 			<PrivateAssets>analyzers</PrivateAssets>
 		</ProjectReference>
 	</ItemGroup>
@@ -31,6 +32,13 @@
 		<Compile Include="..\Microsoft.Toolkit.Win32.UI.Controls\Interop\**\*.cs" LinkBase="Shared\Interop" />
 		<Compile Include="..\Microsoft.Toolkit.Win32.UI.Controls\Verify.cs" Link="Verify.cs" />
 		<Compile Include="..\Microsoft.Toolkit.Win32.UI.Controls\GlobalSuppressions.cs" Link="GlobalSuppressions.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="DotNet.ReproducibleBuilds" Version="0.1.66">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
 	</ItemGroup>
 
 

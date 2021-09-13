@@ -25,10 +25,15 @@
 -include Windows.UI.Xaml.Media.Animation.ConditionallyIndependentlyAnimatableAttribute
 		</CsWinRTFilters>
 		<Platforms>x64</Platforms>
+		<RepositoryUrl>https://github.com/nesherhh/XamlIslandsNET5</RepositoryUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.3.3-private.19" />
+		<PackageReference Include="DotNet.ReproducibleBuilds" Version="0.1.66">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.3.3-private.20" />
 	</ItemGroup>
 
 </Project>

@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<Authors>Microsoft.Toolkit</Authors>
-		<Version>6.1.2.14</Version>
+		<Version>6.1.2.15</Version>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 		<NoPackageAnalysis>true</NoPackageAnalysis>
 		<PackageIconUrl>https://raw.githubusercontent.com/windows-toolkit/WindowsCommunityToolkit/master/build/nuget.png</PackageIconUrl>

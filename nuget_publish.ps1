@@ -1,0 +1,7 @@
+dotnet nuget push "bin/nupkg/Microsoft.Toolkit.UI.XamlHost.6.1.2.15.nupkg" --api-key $GITHUB_PAT --source "github"
+dotnet nuget push "bin/nupkg/Microsoft.Toolkit.Win32.UI.SDK.6.1.2.15.nupkg" --api-key $GITHUB_PAT --source "github"
+dotnet nuget push "bin/nupkg/Microsoft.Toolkit.Win32.UI.XamlApplication.6.1.2.15.nupkg" --api-key $GITHUB_PAT --source "github"
+dotnet nuget push "bin/nupkg/Microsoft.Toolkit.Wpf.UI.Controls.6.1.2.15.nupkg" --api-key $GITHUB_PAT --source "github"
+dotnet nuget push "bin/nupkg/Microsoft.Toolkit.Wpf.UI.XamlHost.6.1.2.15.nupkg" --api-key $GITHUB_PAT --source "github"
+dotnet nuget push "bin/nupkg/WindowsSDKContracts.6.1.2.15.nupkg" --api-key $GITHUB_PAT --source "github"
+dotnet nuget push "bin/nupkg/XamlHostContracts.6.1.2.15.nupkg" --api-key $GITHUB_PAT --source "github"
