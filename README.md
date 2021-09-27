@@ -15,7 +15,7 @@ Original source code comes from [Windows Toolkit](https://github.com/windows-too
 
 ## How to compile XAML Islands
 - Compile CsWinRT private build (see 'How to create a private build of CsWinRT')
-- Compile XAML Islands projects using '**msbuild /t:Pack /p:Platform=x64 -m XamlIslandsNET5NoSamples.sln**'
+- Compile XAML Islands projects using '**msbuild /t:Pack /p:Platform=x64 /p:Configuration=Release -m XamlIslandsNET5NoSamples.sln**'
 - Open Samples.sln and run CustomControlsWPFApp project
 
 If you make any changes in CustomControls make sure to change the version number in CustomControls.csproj and update nuget package version. 
