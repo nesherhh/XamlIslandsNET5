@@ -7,8 +7,6 @@
 		<Nullable>enable</Nullable>
 		<CsWinRTComponent>true</CsWinRTComponent>
 		<CsWinRTWindowsMetadata>10.0.19041.0</CsWinRTWindowsMetadata>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<OutputPath>../../bin/nupkg</OutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>
