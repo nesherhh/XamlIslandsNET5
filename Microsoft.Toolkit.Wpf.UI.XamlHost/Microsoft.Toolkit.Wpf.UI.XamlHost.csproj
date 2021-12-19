@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
+		<TargetFrameworks>net5.0-windows10.0.19041.0;net6.0-windows10.0.19041.0</TargetFrameworks>
 		<Title>Windows Community Toolkit XAMLHost for WPF</Title>
 		<Description>
 			This library provides XAML islands helpers for WPF. It is part of the Windows Community Toolkit.
@@ -40,7 +40,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="DotNet.ReproducibleBuilds" Version="0.1.66">
+	  <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
 	    <PrivateAssets>all</PrivateAssets>
 	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 	  </PackageReference>

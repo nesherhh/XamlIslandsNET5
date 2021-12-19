@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
+		<TargetFrameworks>net5.0-windows10.0.19041.0;net6.0-windows10.0.19041.0</TargetFrameworks>
 		<CsWinRTWindowsMetadata>10.0.19041.0+</CsWinRTWindowsMetadata>
 		<AssetTargetFallback>uap10.0.19041</AssetTargetFallback>
 		<CsWinRTFilters>
@@ -26,14 +26,15 @@
 		</CsWinRTFilters>
 		<Platforms>x64</Platforms>
 		<RepositoryUrl>https://github.com/nesherhh/XamlIslandsNET5</RepositoryUrl>
+		<DebugType>full</DebugType>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="DotNet.ReproducibleBuilds" Version="0.1.66">
+		<PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.3.5-private.1" />
+		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.4.1-private.1" />
 	</ItemGroup>
 
 </Project>
