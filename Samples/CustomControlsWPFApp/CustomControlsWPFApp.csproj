@@ -13,7 +13,7 @@
 
 	<ItemGroup>
 		<PackageReference Update="Microsoft.VCRTForwarders.140" Version="1.0.7" />
-		<PackageReference Include="WindowsSDKContracts" Version="6.1.2.12" />
+		<PackageReference Include="WindowsSDKContracts" Version="6.1.2.21" />
 	</ItemGroup>
 
 	<ItemGroup>
