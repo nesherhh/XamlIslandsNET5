@@ -16,7 +16,7 @@
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.4.1-private.1" />
+		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.6.4" />
 		<ProjectReference Include="..\Microsoft.Toolkit.Win32.UI.XamlHost\Microsoft.Toolkit.Win32.UI.XamlHost.vcxproj">
 			<PrivateAssets>all</PrivateAssets>
 		</ProjectReference>
