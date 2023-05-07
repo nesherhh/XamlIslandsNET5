@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net5.0-windows;net6.0-windows</TargetFrameworks>
+		<TargetFramework>net6.0-windows</TargetFramework>
 		<UseWPF>true</UseWPF>
 		<Title>Windows Community Toolkit Tools for XAML Islands</Title>
 		<Description>This library provides XAML islands common helpers applications. It is part of the Windows Community Toolkit.</Description>

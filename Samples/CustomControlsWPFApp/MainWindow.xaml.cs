@@ -1,23 +1,30 @@
-﻿using System;
-using System.Windows;
+﻿using Windows.UI.Xaml;
+using Windows.UI.Xaml.Data;
 using CustomControls;
+using RoutedEventArgs = System.Windows.RoutedEventArgs;
+using Window = System.Windows.Window;
 
-namespace CustomControlsWPFApp
+namespace CustomControlsWPFApp;
+
+/// <summary>
+/// Interaction logic for MainWindow.xaml
+/// </summary>
+public partial class MainWindow : Window
 {
-	/// <summary>
-	/// Interaction logic for MainWindow.xaml
-	/// </summary>
-	public partial class MainWindow : Window
+	public MainWindow()
 	{
-		public MainWindow()
-		{
-			InitializeComponent();
-		}
+		InitializeComponent();
+	}
 
-		private void MainWindow_OnLoaded(object sender, RoutedEventArgs e)
+	private void MainWindow_OnLoaded(object sender, RoutedEventArgs e)
+	{
+		var customControl1 = new CustomControl1();
+		XamlHost.Child = customControl1;
+
+		customControl1.SetBinding(CustomControl1.HeadingProperty, new Binding
 		{
-			var customControl1 = new CustomControl1();
-			XamlHost.Child = customControl1;
-		}
+			Source = vm,
+			Path = new PropertyPath(nameof(ViewModel.Heading))
+		});
 	}
 }

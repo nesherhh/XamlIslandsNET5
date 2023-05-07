@@ -1,26 +1,28 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-					xmlns:map="using:Windows.UI.Xaml.Controls.Maps"
-					xmlns:cc="using:CustomControls">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:map="using:Windows.UI.Xaml.Controls.Maps"
+                    xmlns:cc="using:CustomControls">
 
 	<Style TargetType="cc:CustomControl1">
 		<Setter Property="Background"
-				Value="Black" />
+		        Value="Black" />
 		<Setter Property="Foreground"
-				Value="White" />
+		        Value="White" />
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="cc:CustomControl1">
 					<Border Background="{TemplateBinding Background}"
-							BorderBrush="{TemplateBinding BorderBrush}"
-							BorderThickness="{TemplateBinding BorderThickness}">
+					        BorderBrush="{TemplateBinding BorderBrush}"
+					        BorderThickness="{TemplateBinding BorderThickness}">
 						<Grid>
 							<Grid.RowDefinitions>
-								<RowDefinition Height="Auto"/>
-								<RowDefinition/>
+								<RowDefinition Height="Auto" />
+								<RowDefinition />
 							</Grid.RowDefinitions>
-							<TextBlock Text="This is UWP/WinRT Control in C# with Template in C++/WinRT" />
-							<map:MapControl Grid.Row="1" />
+							<TextBlock x:Name="PART_Text"  Text="{Binding Path=Heading, ElementName=PART_Map, Mode=OneWay}" />
+							<map:MapControl x:Name="PART_Map"
+							                Grid.Row="1"
+							                Heading="{TemplateBinding Heading}" />
 						</Grid>
 
 					</Border>
