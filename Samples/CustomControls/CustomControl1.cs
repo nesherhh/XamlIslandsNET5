@@ -21,8 +21,10 @@ public sealed class CustomControl1 : Control
 	private static void PropertyChangedCallback(DependencyObject d, DependencyPropertyChangedEventArgs e)
 	{
 		var customControl1 = (CustomControl1) d;
-		if (customControl1._mapControl is not null) 
-			customControl1._mapControl.Heading = (double) e.NewValue;
+		if (customControl1._mapControl is not null)
+		{
+			customControl1._mapControl.Heading = (double)e.NewValue;
+		}
 	}
 
 	public CustomControl1()

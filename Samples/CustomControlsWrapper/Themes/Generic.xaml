@@ -2,6 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:map="using:Windows.UI.Xaml.Controls.Maps"
                     xmlns:cc="using:CustomControls">
+	<cc:DebugConverter x:Key="cvt" />
 
 	<Style TargetType="cc:CustomControl1">
 		<Setter Property="Background"
@@ -21,7 +22,8 @@
 							</Grid.RowDefinitions>
 							<TextBlock x:Name="PART_Text" Text="{Binding Path=Heading, ElementName=PART_Map, Mode=OneWay}" />
 							<map:MapControl x:Name="PART_Map"
-							                Grid.Row="1" />
+							                Grid.Row="1"
+							                Heading="{Binding Path=Heading, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource cvt}, Mode=OneWay}" />
 						</Grid>
 
 					</Border>
