@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net5.0-windows10.0.19041.0;net6.0-windows10.0.19041.0</TargetFrameworks>
-		<AssetTargetFallback>uap10.0.19041</AssetTargetFallback>
+		<TargetFramework>net7.0-windows10.0.22621.0</TargetFramework>
+		<AssetTargetFallback>uap10.0.22621</AssetTargetFallback>
 		<CsWinRTFilters>
 -include Microsoft.Toolkit.Win32.UI.XamlHost
 		</CsWinRTFilters>
@@ -12,15 +12,15 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Dongle.WindowsSDK.NET" Version="10.0.22621.756" />
 		<PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.6.4" />
+		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="2.2.0-private.0" />
 		<ProjectReference Include="..\Microsoft.Toolkit.Win32.UI.XamlHost\Microsoft.Toolkit.Win32.UI.XamlHost.vcxproj">
 			<PrivateAssets>all</PrivateAssets>
 		</ProjectReference>
-		<ProjectReference Include="..\WindowsSDKContracts\WindowsSDKContracts.csproj" />
 	</ItemGroup>
 
 </Project>

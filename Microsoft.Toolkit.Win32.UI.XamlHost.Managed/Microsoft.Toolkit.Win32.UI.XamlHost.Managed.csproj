@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net5.0-windows10.0.19041.0;net6.0-windows10.0.19041.0</TargetFrameworks>
+		<TargetFramework>net7.0-windows10.0.22621.0</TargetFramework>
 		<UseWPF>true</UseWPF>
 		<Title>Windows Community Toolkit XAMLHost</Title>
 		<Description>This library provides XAML islands common helpers for WPF and WinForms. It is part of the Windows Community Toolkit.</Description>
@@ -26,6 +26,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Dongle.WindowsSDK.NET" Version="10.0.22621.756" />
 	  <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
 	    <PrivateAssets>all</PrivateAssets>
 	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -39,7 +40,6 @@
 		<ProjectReference Include="..\Microsoft.Toolkit.Win32.UI.XamlApplication.Package\Microsoft.Toolkit.Win32.UI.XamlApplication.Package.csproj">
 			<PrivateAssets>analyzers</PrivateAssets>
 		</ProjectReference>
-		<ProjectReference Include="..\WindowsSDKContracts\WindowsSDKContracts.csproj" />
 		<ProjectReference Include="..\XamlHostContracts\XamlHostContracts.csproj" />
 	</ItemGroup>
 

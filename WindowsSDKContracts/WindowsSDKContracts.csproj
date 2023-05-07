@@ -34,7 +34,7 @@
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.6.4" />
+		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="2.2.0-private.0" />
 	</ItemGroup>
 
 </Project>
