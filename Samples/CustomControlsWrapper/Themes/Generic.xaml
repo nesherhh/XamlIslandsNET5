@@ -19,10 +19,9 @@
 								<RowDefinition Height="Auto" />
 								<RowDefinition />
 							</Grid.RowDefinitions>
-							<TextBlock x:Name="PART_Text"  Text="{Binding Path=Heading, ElementName=PART_Map, Mode=OneWay}" />
+							<TextBlock x:Name="PART_Text" Text="{Binding Path=Heading, ElementName=PART_Map, Mode=OneWay}" />
 							<map:MapControl x:Name="PART_Map"
-							                Grid.Row="1"
-							                Heading="{TemplateBinding Heading}" />
+							                Grid.Row="1" />
 						</Grid>
 
 					</Border>
