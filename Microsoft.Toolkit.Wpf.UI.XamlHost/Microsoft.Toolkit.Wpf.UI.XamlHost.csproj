@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net7.0-windows10.0.22000.0</TargetFramework>
+		<TargetFramework>net7.0-windows10.0.19041.0</TargetFramework>
 		<Title>Windows Community Toolkit XAMLHost for WPF</Title>
 		<Description>
 			This library provides XAML islands helpers for WPF. It is part of the Windows Community Toolkit.

@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
-		<TargetFramework>net7.0-windows10.0.22000.0</TargetFramework>
+		<TargetFramework>net7.0-windows10.0.19041.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<UseWPF>true</UseWPF>
 		<Platforms>x64</Platforms>
@@ -13,7 +13,7 @@
 
 	<ItemGroup>
 		<PackageReference Update="Microsoft.VCRTForwarders.140" Version="1.0.7" />
-		<PackageReference Include="Dongle.WindowsSDK.NET" Version="10.0.22000.198" />
+		<PackageReference Include="Dongle.WindowsSDK.NET" Version="10.0.19041.4" />
 	</ItemGroup>
 
 	<ItemGroup>
